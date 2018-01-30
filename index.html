@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>anime.js</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:title" content="anime.js">
+  <meta property="og:url" content="http://animejs.com">
+  <meta property="og:description" content="Javascript Animation Engine">
+  <meta property="og:image" content="http://animejs.com/documentation/assets/img/icons/og.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="anime.js">
+  <meta name="twitter:site" content="@juliangarnier">
+  <meta name="twitter:description" content="Javascript Animation Engine">
+  <meta name="twitter:image" content="http://animejs.com/documentation/assets/img/icons/twitter.png">
+  <link rel="icon" type="image/png" href="documentation/assets/img/icons/monstar.webp" >
+  <link href="documentation/assets/css/anime.css" rel="stylesheet">
+  <link href="documentation/assets/css/site.css" rel="stylesheet">
+</head>
+<body>
+  <canvas class="fireworks"></canvas>
+  <div class="logo-animation">
+    <div class="letters">
+
+      <div class="letter letter-m-1">
+        <svg viewBox="0 0 162 162">
+          <g fill="none" fill-rule="evenodd" stroke="#17A18E">
+            <path class="fill in" stroke-width="40" d="M21 161V81c1-33.14 26.86-60 60-60a60 60 0 0 1 60 60v80"/>
+            <path class="fill out" stroke-width="40" d="M141 161V81a60 60 0 0 0-60-60c-33.14 0-59 26.86-60 60v80"/>
+            <path class="line out" transform="translate(1,1)" stroke-width="2" d="M1 161V80.4C2.35 36.27 37.2 1 81 1a80 80 0 0 1 80 80v80h-40V81a40 40 0 0 0-40-40c-21.7 0-39.18 17.59-40 40.33V161H1z"/>
+          </g>
+        </svg>
+      </div>
+      <div class="letter letter-m-2">
+        <svg viewBox="0 0 162 162">
+          <g fill="none" fill-rule="evenodd" stroke="#17A18E">
+            <path class="fill in" stroke-width="40" d="M21 161V81c1-33.14 26.86-60 60-60a60 60 0 0 1 60 60v80"/>
+            <path class="fill out" stroke-width="40" d="M141 161V81a60 60 0 0 0-60-60c-33.14 0-59 26.86-60 60v80"/>
+            <path class="line out" transform="translate(1,1)" stroke-width="2" d="M1 161V80.4C2.35 36.27 37.2 1 81 1a80 80 0 0 1 80 80v80h-40V81a40 40 0 0 0-40-40c-21.7 0-39.18 17.59-40 40.33V161H1z"/>
+          </g>
+        </svg>
+      </div>
+      <div class="letter letter-o">
+        <svg viewBox="0 0 162 162">
+          <g fill="none" fill-rule="evenodd" stroke="#18FF92">
+            <path class="fill in" stroke-width="40" d="M80 140 C113.14 140 140 113.14 140 80 C140 46.86 113.14 20 80 20 C46.86 20 20 46.86 20 80 C 20 113.14 46.86 140 80 140Z"/>
+            <path class="fill out" stroke-width="40" d="M80 140 C 46.86 140 20 113.14 20 80 C20 46.86 46.86 20 80 20 C113.14 20 140 46.86  140 80 C140 113.14 113.14 140 80 140"/>
+            <path class="line out" transform="translate(1,1)" stroke-width="2" d="M80 120 C102.09 120 120 102.09 120 80 C120 57.91 102.09 40 80 40 C57.91 40 40 57.91 40 80 C40 102.09 57.91 120 80 120 Z M80 160 C35.82 160 0 124.18 0 80 C0 35.82 35.82 0 80 0 C124.18 0 160 35.82 160 80 C160 124.18 124.18 160 80 160Z"/>
+          </g>
+        </svg>
+      </div>
+      <div class="letter letter-n">
+        <svg viewBox="0 0 162 162">
+          <g fill="none" fill-rule="evenodd" stroke="#61C3FF">
+            <path class="fill in" stroke-width="40" d="M21 161V1"/>
+            <path class="fill out" stroke-width="40" d="M21 1v160"/>
+            <path class="fill in" stroke-width="40" d="M21 161V81c1-33.14 26.86-60 60-60a60 60 0 0 1 60 60v80"/>
+            <path class="fill out" stroke-width="40" d="M141 161V81a60 60 0 0 0-60-60c-33.14 0-59 26.86-60 60v80"/>
+            <path class="line out" transform="translate(1,1)" stroke-width="2" d="M41 161V1H1v160h40z"/>
+            <path class="line out" transform="translate(1,1)" stroke-width="2" d="M1 161V80.4C2.35 36.27 37.2 1 81 1a80 80 0 0 1 80 80v80h-40V81a40 40 0 0 0-40-40c-21.7 0-39.18 17.59-40 40.33V161H1z"/>
+          </g>
+        </svg>
+      </div>
+      <div class="letter letter-s">
+        <svg viewBox="0 0 162 162">
+          <g fill="none" fill-rule="evenodd" stroke="#FF7C72">
+            <path class="fill in" stroke-width="40" d="M20 107 C20 122 28.28 140 61.81 140 C95.34 140 108 120 103.27 101 C98 83 80.47 80 59.65 78 C38.83 76 25.95 64 25.95 49 C25.95 33 38.83 20 61.63 20 C84 20 96.31 31 96.32 47"/>
+            <path class="fill out" stroke-width="40" d="M96.31 47 C96.31 31 84 20 61.63 20 C38.83 20 25.95 33 25.95 49 C25.95 64 38.83 76 59.65 78 C80.47 80 98 83 103.27 101 C108 120 95.34 140 61.81 140 C28.28 140 20 122 20 107 "/>
+            <path class="line out" transform="translate(1,1)" stroke-width="2" d="M116.31 47 H76.31 C76.31 44.91 75.86 43.92 74.78 43.05 C72.62 41.3 68.26 40 61.63 40 C55.24 40 50.82 41.47 48.32 43.63 C43.92 48.01 44.31 56.08 61.56 58.09
+                                                      C76.79 59.55 86.02 61.23 95.12 65.09 C108.65 70.85 118.33 80.75 122.67 96.17 C126.69 112.29 122.88 128.88 111.62 141.14 C100.27 153.52 82.89 160 61.81 160 C41.25 160 25.06 154.34 14.06 143.14
+                                                      C4.38 133.28 0 120.5 0 107 H40 C40 110.71 40.92 113.4 42.6 115.11 C45.39 117.95 51.25 120 61.81 120 C72.39 120 79 117.54 82.15 114.11 C84 112.09 84.66 109.48 83.96 106.27 C82.44 101.84 77.2 99.78 57.74 97.91
+                                                      C27.9 95.04 5.95 75.72 5.95 49 C5.95 20.33 29.46 0 61.63 0 C93.58 0 116.31 18.39 116.31 47 H76.31 "/>
+          </g>
+        </svg>
+      </div>
+      <div class="letter letter-t">
+        <svg viewBox="0 0 162 162">
+          <g fill="none" fill-rule="evenodd" stroke="#C26EFF">
+            <path class="fill in" stroke-width="40" d="M50 0 V124 C50 124 50 140 66 140 H100"/>
+            <path class="fill in" stroke-width="40" d="M0 56 H100"/>
+            <path class="fill out" stroke-width="40" d="M100 140 H66 C50 140 50 124 50 124 V0"/>
+            <path class="fill out" stroke-width="40" d="M100 56 H0"/>
+            <path class="line out" transform="translate(1,1)" stroke-width="2" d="M 30 0 H70 V36 H100 V76 H70 V120 H100 V160 H70 C42.5 160 30 147.5 30 120 V76 H0 V36 H30 V0"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="letter letter-a">
+        <svg viewBox="0 0 162 162">
+          <g fill="none" fill-rule="evenodd" stroke="#FBF38C">
+            <path  class="fill in" stroke-width="20" d="M79,31 L114,134 L57,95 L79,31 L114,134 Z M27,72 L33,72 L31.5,76 L27,72 L33,72 Z M131,72 L126.5,76 L125,72 L131,72 L126.5,76 Z M43,132.5 L45.9851703,124 L50.5,127 L43,132.5 L45.9851703,124 Z"></path>
+            <path  class="fill in" stroke-width="20" d="M79,31 L57,95 L114,134 L79,31 L57,95 Z M27,72 L31.5,76 L33,72 L27,72 L31.5,76 Z M131,72 L125,72 L126.5,76 L131,72 L125,72 Z M43,132.5 L50.5,127 L45.9851703,124 L43,132.5 L50.5,127 Z"></path>
+            <path class="fill out" stroke-width="2" d="M0.7 62 L47.43 62 L35.75 93.15 Z M79.05 0.08 L133.13 159.2 L45.07 98.95 Z M78.95 61.92 L94.87 108.8 L68.83 91.05 Z M110.57 62 L157.3 62 L122.25 93.15Z M40.81 108.56 L67.96 126.6 L22.86 159.67Z"></path>"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="letter letter-r">
+        <svg viewBox="0 0 162 162">
+          <g fill="none" fill-rule="evenodd" stroke="#FF7C72">
+            <path class="fill in" stroke-width="40" stroke-linecap="square" stroke-linejoin="miter" d="M20 140 V20 H63 C76.5 20 94.5 31 94.5 53 C94.5 75 76.5 86 63 86 H23.5 H63 L100.5 160"/>
+            <path class="fill out" stroke-width="40" stroke-linecap="square" stroke-linejoin="miter" d="M100.5 160 L63 86 H23.5 H 63 C76.5 86 94.5 75 94.5 53 C94.5 31 76.5 20 63 20 H20 V140"/>
+            <path class="line out" stroke-width="2" d="M1,1 L64,1 C93.5,1 115.5,25 115.5,54 C115.5,83 96.5,96 91.14,98.2901083 L124,161 L80,161 L51.5,107 L41,107 L41,161 L1,161 L1,1 Z M40 40 H63 C70 40 74.5 46.5 74.5 53 C74.5 59.5 70 66 63 66 H40 V40"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="logo-icon">
+        <div class="icon">
+          <svg viewBox="0 0 62 62">
+            <g fill="none" fill-rule="evenodd" stroke-width="3" transform="translate(1 1)">
+              <path class="icon-curve" stroke="#17A18E" transform="scale(.5)" d="M29.8265767,39.8900452 L22.9923366,60.149682 L0,39.8900452 L29.8265767,39.8900452 Z M98.815641,39.6451682 L79.0601042,59.9028125 L72.2268603,39.6451682 L98.815641,39.6451682 Z M14.9132884,103.000169 L26.081194,70.4667944 L44.2198253,82.8461338 L14.9132884,103.000169 Z M29.0219097,64.2777224 L51.0877385,0 L86.7891716,104 L29.0219097,64.2777224 Z M59.3316653,66.8918691 L50.5507625,41.3162694 L45.1232202,57.1206989 L59.3316653,66.8918691 Z"/>
+            </g>
+          </svg>
+        </div>
+
+        <div class="icon-text">
+          <svg viewBox="0 0 260 62">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="monstar" transform="translate(10, 22)">
+                <polygon id="Fill-1" fill="#17A18E" points="21 4 13.0001471 14.4854321 5 4 0 4 0 30 5 30 5 11.9624798 13.0001471 22.4479118 21 12 21 30 26 30 26 4"></polygon>
+                <path d="M41,30.0002942 C33.8202983,30.0002942 28,24.1799301 28,17.0001471 C28,9.82036411 33.8202983,4 41,4 C48.1797017,4 54,9.82036411 54,17.0001471 C54,24.1799301 48.1797017,30.0002942 41,30.0002942 Z M41,25.5002942 C45.6944485,25.5002942 49.5000509,21.6946487 49.5000509,17.0001471 C49.5000509,12.3056455 45.6944485,8.5 41,8.5 C36.3055515,8.5 32.4999491,12.3056455 32.4999491,17.0001471 C32.4999491,21.6946487 36.3055515,25.5002942 41,25.5002942 Z" id="Combined-Shape" fill="#17A18E"></path>
+                <polygon id="Fill-4" fill="#17A18E" points="56 4 61 4 75 21 75 4 80 4 80 30 75 30 61 13 61 30 56 30"></polygon>
+                <path d="M90.6773173,19.0432864 C85.9405017,18.5881923 82.5500216,15.604519 82.5500216,11.5271605 C82.5500216,7.12490826 86.1639538,4 91.2575583,4 C96.3226395,4 99.7870122,6.80167519 99.7870122,11.1740741 L94.9721973,11.1740741 C94.9721973,9.71279253 93.8618154,8.81481481 91.2575583,8.81481481 C88.680172,8.81481481 87.3648364,9.95216405 87.3648364,11.5271605 C87.3648364,12.8625416 88.6729859,14.0137328 91.1377849,14.2505407 C96.9239181,14.8064491 99.7395961,16.0036644 100.918217,20.0312701 L100.943741,20.1255441 C102.28892,25.5260937 98.1851101,30 91.2888382,30 C84.8600987,30 81.5,26.5792327 81.5,21.7666667 L86.3148148,21.7666667 C86.3148148,23.9391782 87.5387234,25.1851852 91.2888382,25.1851852 C95.1976305,25.1851852 96.7879803,23.4831919 96.2834057,21.3377076 C95.8516298,19.9423682 94.5882515,19.4190332 90.6773173,19.0432864 Z" id="Path-2" fill="#17A18E" fill-rule="nonzero"></path>
+                <polygon id="Fill-8" fill="#17A18E" points="103 4 122 4 122 9 115 9 115 30 110 30 110 9 103 9"></polygon>
+                <path d="M133.055219,13.1104447 L130.980374,19.2611825 L124,13.1104447 L133.055219,13.1104447 Z M154,13.0361011 L148.002305,19.186234 L145.927761,13.0361011 L154,13.0361011 Z M128.52761,32.2704044 L131.918137,22.3934131 L137.424947,26.1517269 L128.52761,32.2704044 Z M132.810926,20.5144377 L139.510016,1 L150.348816,32.5739489 L132.810926,20.5144377 Z M142.012836,21.3080813 L139.346992,13.5434402 L137.699214,18.3415964 L142.012836,21.3080813 Z" id="Combined-Shape" fill="#17A18E"></path>
+                <path d="M162,14 L167.387189,14 C168.567559,14 170,13.1913544 170,11.5078065 C170,9.82425854 168.513346,9 167.387189,9 L162,9 L162,14 Z M157,29.9676796 L157,4 L167.387189,4 C171.568096,4 175.5,7 175.5,11.5 C175.5,15.9558201 172.5,18.5 171,19 L176,30 L170,30 L166,19 L162,19 L162,30 L157,29.9676796 Z" id="Fill-10" fill="#17A18E"></path>
+                <polygon id="Fill-12" fill="#C8C8C9" points="179 30 179 4 184 4 184 25.5414167 195 25.5 199 30"></polygon>
+                <path d="M228.990548,25 L234,25 C235,25 236.5,24.2518366 236.5,22.5 C236.5,20.7481634 235,20 234,20 L228.990548,20 L228.990548,25 Z M228.990548,14 L233.066782,14 C233.763,14 235.5,13.5 235.5,11.5036534 C235.5,9.50730675 233.712651,9.00730675 233.016433,9.00730675 L228.990548,9.00730675 L228.990548,14 Z M224.016433,30.1308825 L224.016433,4.13088253 L233.156197,4.13088253 C235.479585,4.13088253 238.758089,5.41694973 240.149266,8.9085171 C241.540443,12.4000845 240.210873,15.2040188 239.358622,16.4163133 C240.160239,17.1313274 242.016433,19.0874494 242.016433,22.3306749 C242.016433,25.5739005 239.816608,30.1308825 234.422151,30.1308825 L224.016433,30.1308825 Z" id="Fill-14" fill="#C8C8C9"></path>
+                <path d="M206.5,19.5 L208.5,15.5 L210.5,19.5 L206.5,19.5 Z M209,4 L208,4 L197,25.5 L201,30 L203.767698,24.7994662 L213,25 L215.597608,30 L221.415883,30 L209,4 Z" id="Fill-17" fill="#C8C8C9"></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="dot dot-i">
+        <svg >
+          <g fill="none" fill-rule="evenodd">
+            <rect width="60" height="60" x="1" y="1" fill="#17A18E" rx="30"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="dot dot-e">
+        <svg viewBox="0 0 42 42">
+          <g fill="none" fill-rule="evenodd">
+            <rect width="20" height="20" x="1" y="1" fill="#FFFFFF" rx="20"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="info">
+    <p class="description">
+      Javascript Animation Engine
+    </p>
+    <div class="links">
+      <a class="button gray" href="#">
+        <svg viewBox="0 0 180 60">
+          <path d="M10,10 C10,10 50,9.98999977 90,9.98999977 C130,9.98999977 170,10 170,10 C170,10 170.009995,20 170.009995,30 C170.009995,40 170,50 170,50 C170,50 130,50.0099983 90,50.0099983 C50,50.0099983 10,50 10,50 C10,50 9.98999977,40 9.98999977,30 C9.98999977,20 10,10 10,10 Z"></path>
+        </svg>
+        <span>Documentation</span>
+      </a>
+      <a class="button gray" href="#">
+        <svg viewBox="0 0 180 60">
+          <path d="M10,10 C10,10 50,9.98999977 90,9.98999977 C130,9.98999977 170,10 170,10 C170,10 170.009995,20 170.009995,30 C170.009995,40 170,50 170,50 C170,50 130,50.0099983 90,50.0099983 C50,50.0099983 10,50 10,50 C10,50 9.98999977,40 9.98999977,30 C9.98999977,20 10,10 10,10 Z"></path>
+        </svg>
+        <span>CodePen</span>
+      </a>
+      <a class="button green" href="#" target="_blank">
+        <svg viewBox="0 0 180 60">
+          <path d="M10,10 C10,10 50,9.98999977 90,9.98999977 C130,9.98999977 170,10 170,10 C170,10 170.009995,20 170.009995,30 C170.009995,40 170,50 170,50 C170,50 130,50.0099983 90,50.0099983 C50,50.0099983 10,50 10,50 C10,50 9.98999977,40 9.98999977,30 C9.98999977,20 10,10 10,10 Z"></path>
+        </svg>
+        <span>GitHub</span>
+      </a>
+    </div>
+    <p class="credits">X
+      v<span class="version">2.0</span> © <span class="date">2017</span> <a href="#" target="_blank">Power Xuan</a>
+    </p>
+  </div>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-79927007-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script src="anime.min.js"></script>
+  <script src="documentation/assets/js/fireworks.js"></script>
+  <script src="documentation/assets/js/site.js"></script>
+</body>
+</html>
