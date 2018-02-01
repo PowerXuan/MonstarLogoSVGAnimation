@@ -17,7 +17,7 @@ Code the logo to SVG. Note that sketch directly derived svg can not be used dire
 We need the PATH of the logo-svg . So,this is the key.
 
  ### Animate
-Use the animejs ,we can make the logo antmated.
+Use the animejs ,we can make the logo animation.
 
 
 In addition, SVG animation is very interesting, I really like.
